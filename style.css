@@ -1,0 +1,216 @@
+:root {
+  --white: #f5f5f5;
+  --grey: #e4e4e4;
+  --dark-blue: #09172d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  color: var(--white);
+  font-family: "poppins";
+  text-decoration: none;
+}
+
+/* navbar */
+nav {
+  width: 100%;
+  /* background-color: var(--dark-blue); */
+  padding: 30px 80px;
+  position: fixed;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-right {
+  display: flex;
+  gap: 96px;
+}
+.navbar-mainmenu > *:not(:first-child) {
+  margin-left: 48px;
+}
+
+.navbar-contact a,
+.hero-learnmore a,
+.getintouch-contact a {
+  padding: 6px 24px;
+  border-radius: 40px;
+  background-color: rgba(228, 228, 228, 0.5);
+}
+
+/* landing page */
+#Hero {
+  height: 100vh;
+  background: linear-gradient(rgba(9, 23, 45, 0.25), rgba(9, 23, 45, 0.25)),
+    url(/asset/landing-page-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.hero-content h1 {
+  color: var(--white);
+  font-family: "Playfair Display";
+  font-size: 72px;
+}
+.hero-content p {
+  color: var(--white);
+  font-family: "Poppins";
+  text-align: center;
+  font-size: 24px;
+}
+.hero-learnmore {
+  position: absolute;
+  bottom: 64px;
+}
+
+/* About Us */
+#AboutUs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 64px 160px;
+}
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.about-container p,
+.about-container h1 {
+  text-align: center;
+  color: var(--dark-blue);
+}
+.about-container h1 {
+  font-size: 64px;
+  font-family: "Playfair Display";
+}
+.about-container p {
+  font-size: 20px;
+  font-family: "Poppins";
+}
+
+/* Our Work */
+#Works {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 64px 80px;
+}
+.work-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  width: 100%;
+}
+.work-container h1 {
+  font-family: "Playfair Display";
+  font-size: 64px;
+  color: var(--dark-blue);
+}
+.work-cardholder {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 400px;
+}
+.card p {
+  font-size: 24px;
+  line-height: 42px;
+  font-family: "Poppins";
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Get in Touch */
+#GetInTouch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-blue);
+}
+.getintouch-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding: 64px 80px;
+}
+.getintouch-container h1,
+.getintouch-container p {
+  color: var(--white);
+}
+.getintouch-container h1 {
+  font-size: 64px;
+  font-family: "Playfair Display";
+}
+.getintouch-container p {
+  font-size: 24px;
+  font-family: "Poppins";
+  text-align: center;
+}
+.getintouch-contact a {
+  font-size: 32px;
+}
+
+/* footer */
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 80px;
+  gap: 96px;
+}
+.footer-container p {
+  font-size: 18px;
+  font-family: "Poppins";
+  color: var(--dark-blue);
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.footer-content h1 {
+  font-size: 48px;
+  font-family: "Playfair Display";
+  color: var(--dark-blue);
+}
+.footer-content hr {
+  width: 426px;
+}
+.footer-icon {
+  display: flex;
+  gap: 96px;
+}
